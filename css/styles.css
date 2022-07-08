@@ -1,8 +1,41 @@
 body,html {
   height: 100%;
   margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
 }
 
 svg {
   background-color: red;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > div {
+  display: grid;
+  grid-template-columns:  repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: start;
+}
+.left {
+  background-color: #1992d4;
+}
+
+.sidebar-cont {
+  padding-left: 16px;
+  padding-right: 16px;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: space-between;
+  color: white;
+}
+.trageted-logo{
+  font-size: 32px;
+  font-weight: bold;
+  grid-column-gap: 94px;
 }
