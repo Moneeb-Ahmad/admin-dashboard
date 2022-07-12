@@ -12,12 +12,11 @@ ul {
 
 ul>div {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 5fr;
   gap: 16px;
   margin-bottom: 16px;
   font-size: 24px;
   font-weight: bold;
-  justify-content: start;
 }
 
 h1, h3 {
@@ -47,7 +46,12 @@ h1, h3 {
 .trageted-logo {
   font-size: 32px;
   font-weight: bold;
-  grid-column-gap: 94px;
+  gap: 12px;
+}
+
+.site-links {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .header-cont {
