@@ -1,5 +1,5 @@
 body, html {
-  height: 100%;
+  height: 100vh;
   margin: 0;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell,
     'Open Sans', 'Helvetica Neue', sans-serif;
@@ -27,6 +27,8 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
+  height: 100vh;
+  width: 100vw;
 }
 
 .left {
@@ -116,4 +118,41 @@ h1 {
 
 .proj-cont {
   background-color: #e2e8f0;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 4fr 1fr;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  margin-top: 2%;
+  gap: 16px;
+}
+
+.proj-card {
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border-left-width: thick;
+  border-left-style: solid;
+  border-left-color: #f0b429;
+  display: flex;
+  flex-direction: column;
+}
+
+.proj-cont h1 {
+  font-size: 16px;
+}
+
+.card-content {
+  font-size: 12px;
+  color: #646464;
+}
+
+.interaction-buttons {
+  align-self: flex-end;
 }
