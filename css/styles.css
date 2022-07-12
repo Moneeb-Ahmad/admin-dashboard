@@ -20,7 +20,7 @@ ul>div {
   justify-content: start;
 }
 
-h1 {
+h1, h3 {
   margin: 0;
 }
 
@@ -118,18 +118,20 @@ h1 {
 
 .proj-cont {
   background-color: #e2e8f0;
+  width: 100%;
   display: grid;
   gap: 16px;
   grid-template-columns: 4fr 1fr;
   padding-left: 16px;
   padding-top: 32px;
+  padding-right: 16px;
 }
 
 .cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 1fr));
-  margin-top: 2%;
   gap: 16px;
+  margin-top: 16px;
 }
 
 .proj-card {
@@ -155,4 +157,35 @@ h1 {
 
 .interaction-buttons {
   align-self: flex-end;
+}
+
+.proj-cont-right-top {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr));
+  gap: 16px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  align-content: center;
+  justify-items: center;
+  margin-top: 16px;
+  font-size: 12px;
+  color: #646464;
+  text-align: left;
+}
+
+.proj-cont-right-top h3 {
+  font-size: 16px;
+  color: black;
+}
+
+.annouce-card {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.annouce-card:nth-child(n+2) {
+  border-top-color: #e0e0e0;
+  border-top-width: 2px;
+  border-top-style: solid;
 }
