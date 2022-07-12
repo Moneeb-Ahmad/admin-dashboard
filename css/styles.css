@@ -185,8 +185,6 @@ h1, h3 {
   background-color: white;
   padding: 16px;
   border-radius: 5px;
-  align-content: center;
-  justify-items: center;
   margin-top: 16px;
   font-size: 12px;
   text-align: left;
@@ -195,6 +193,8 @@ h1, h3 {
 .proj-cont-right-top {
   grid-template-rows: repeat(3, 1fr));
   color: #646464;
+  align-content: center;
+  justify-items: center;
   margin-bottom: 16px;
 }
 
@@ -220,7 +220,8 @@ h1, h3 {
 
 .user-cont {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 4fr;
+  gap: 8px;
 }
 
 .handel-content {
