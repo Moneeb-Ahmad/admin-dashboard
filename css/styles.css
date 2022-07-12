@@ -125,6 +125,7 @@ h1, h3 {
   padding-left: 16px;
   padding-top: 32px;
   padding-right: 16px;
+  padding-bottom: 6%;
 }
 
 .cards {
@@ -159,9 +160,9 @@ h1, h3 {
   align-self: flex-end;
 }
 
+.proj-cont-right-bottom,
 .proj-cont-right-top {
   display: grid;
-  grid-template-rows: repeat(3, 1fr));
   gap: 16px;
   background-color: white;
   padding: 16px;
@@ -170,8 +171,12 @@ h1, h3 {
   justify-items: center;
   margin-top: 16px;
   font-size: 12px;
-  color: #646464;
   text-align: left;
+}
+
+.proj-cont-right-top {
+  grid-template-rows: repeat(3, 1fr));
+  color: #646464;
 }
 
 .proj-cont-right-top h3 {
@@ -188,4 +193,17 @@ h1, h3 {
   border-top-color: #e0e0e0;
   border-top-width: 2px;
   border-top-style: solid;
+}
+
+.proj-cont-right-bottom {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.user-cont {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.handel-content {
+  color: #646464;
 }
